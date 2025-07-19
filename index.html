@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code with Ahad Ali.Com</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+
+<body  onload="initPage()">
+  <header>
+    <div class="clock" id="clock">00:00:00</div>
+    <nav>
+      <div class="left">Ahad Ali</div>
+      <div class="right">
+        <ul>
+          <li><a href="home.html" target="_blank">Home</a></li>
+          <li><a href="about.html" target="_blank">About Me</a></li>
+          <li><a href="Course.html" target="_blank">Services</a></li>
+          <li><a href="contact.html" target="_blank">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Assalam-O-Alaikum</h1>
+    <h2>Welcome to My Website: Code with Ahad Ali</h2>
+    <p>This is my <strong>YouTube Channel</strong> link. Go to my channel and <a href="https://www.youtube.com/@AhadAli-MPA" onclick="showMessage()">Click here</a> to learn coding. In 2025, I'll be teaching a special course on <strong>Web Development</strong>.</p>
+
+    <p>We will first explore <strong>Frontend Development</strong> (HTML, CSS, JavaScript) which is easier, and then move on to <strong>Backend Development</strong>.</p>
+
+    <p>To understand programming well, you must first master <strong>Frontend</strong>, then proceed to <strong>Backend</strong> like PHP, Node.js, and databases.</p>
+
+    <p>For Learn Coding on <strong>YouTube Please</strong> <a href="https://www.youtube.com/@AhadAli-MPA" target="_blank">Click here</a>.</p>
+  </main>
+
+  <footer>
+    &copy; 2025 Code with Ahad Ali. All rights reserved.
+  </footer>
+
+  <script>
+    function initPage() {
+			setInterval(updateClock, 1000);
+			updateClock();
+			window.onscroll = function () {
+				const btn = document.getElementById("topBtn");
+				btn.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? "block" : "none";
+			};
+		}
+    function showMessage() {
+      alert("Redirecting to Ahad Ali's YouTube Channel...\nMake sure to Subscribe and Like!");
+    }
+    
+		function updateClock() {
+			const now = new Date();
+			document.getElementById("clock").textContent = now.toLocaleTimeString();
+		}
+  </script>
+</body>
+
+</html>
