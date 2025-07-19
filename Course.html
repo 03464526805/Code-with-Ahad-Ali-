@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services - Code with Ahad Ali</title>
+  <style>
+    :root {
+      --bg-color: #f5f5f5;
+      --text-color: #111;
+      --card-bg: #fff;
+      --accent: #6a11cb;
+    }
+
+    body.dark {
+      --bg-color: #121212;
+      --text-color: #f9f9f9;
+      --card-bg: #1f1f1f;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      transition: background 0.5s, color 0.5s;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      animation: fadeInDown 1.2s ease-out;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    .toggle-btn {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      background: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s;
+    }
+
+    .toggle-btn:hover {
+      background: #e0e0e0;
+    }
+
+    main {
+      padding: 40px 20px;
+      text-align: center;
+      animation: fadeInUp 1.5s ease-out;
+    }
+
+    .intro {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .service-card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 30px 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      transition: transform 0.3s, background 0.5s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .service-card i {
+      font-size: 2.5em;
+      color: var(--accent);
+      margin-bottom: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background: #eee;
+      color: #555;
+    }
+
+    body.dark footer {
+      background: #1a1a1a;
+      color: #ccc;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a2e8a6f36e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+  <header>
+    <h1>Assalam-O-Alaikum</h1>
+    <p>Welcome to Code with Ahad Ali</p>
+  </header>
+
+  <main>
+    <p class="intro">
+      At <strong>Code with Ahad Ali</strong>, we empower learners through high-quality tech education.
+      Start your journey with us and become a professional web developer step by step.
+    </p>
+
+    <section class="services">
+      <div class="service-card">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Website Development</h3>
+        <p>Learn how to create modern, responsive websites using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-paint-brush"></i>
+        <h3>CV Design</h3>
+        <p>Master the art of user interface and user experience design to build CV's.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-server"></i>
+        <h3>Complete Documentation</h3>
+        <p>I tjis part you can Understand the all Documents work's like CV's, Books etc, </p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-briefcase"></i>
+        <h3>Freelancing Skills</h3>
+        <p>Get tips and tools to start your freelancing career and earn through your skills online.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>&copy; 2025 Code with Ahad Ali. All rights reserved.</footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
