@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ahad Ali - Developer & Operator</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(to right, #00b09b, #96c93d);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: slideDown 1.5s ease;
+    }
+
+    @keyframes slideDown {
+      from {transform: translateY(-100%);}
+      to {transform: translateY(0);}
+    }
+
+    .welcome {
+      text-align: center;
+      font-size: 28px;
+      margin: 20px 0;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+
+    main {
+      padding: 20px;
+      animation: fadeInUp 1s ease-in;
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      border-left: 5px solid #00b09b;
+      padding-left: 10px;
+      margin-bottom: 10px;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 15px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .glow {
+      color: #00b09b;
+      font-weight: bold;
+      text-shadow: 0 0 10px #00b09b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌟 Ahad Ali's Portfolio</h1>
+  </header>
+
+  <div class="welcome">
+    <p class="glow">Assalam-o-Alaikum</p>
+    <p>My name is Ahad Ali</p>
+  </div>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <div class="card">
+        <p>I am a <strong>frontend developer</strong> and <strong>computer operator</strong> who creates professional CVs, books, and official documents. I love bringing ideas to life with clean code and creative design.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Services</h2>
+      <div class="card">📄 CV Design & Editing</div>
+      <div class="card">📘 Book & Document Layout</div>
+      <div class="card">💻 Website Frontend Development</div>
+      <div class="card">🎨 Creative Animations</div>
+    </section>
+
+    <section>
+      <h2>My Mission</h2>
+      <div class="card">
+        <p>I aim to provide top-quality services in digital document creation and web interfaces — with beauty, simplicity, and function.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Ahad Ali | Frontend Dev & Computer Operator</p>
+  </footer>
+
+  <script>
+    window.onload = function() {
+      alert("Welcome! Assalam-o-Alaikum, Ahad Ali here!");
+    }
+  </script>
+
+</body>
+</html>
