@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ahad Ali - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #111;
+      color: #eee;
+      transition: background 0.5s, color 0.5s;
+    }
+
+    /* Sticky Navbar */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #1e1e1e;
+      z-index: 1000;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+    nav a {
+      color: #00bcd4;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px;
+      font-size: 2em;
+      animation: fadeInDown 2s ease-in-out;
+    }
+
+    .intro {
+      text-align: center;
+      margin: 30px auto;
+      font-size: 1.5em;
+    }
+    .typing {
+      display: inline-flexbox;
+      border-right: 2px solid #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 10px;
+      animation: typing 3s steps(30, end) forwards, blink 0.7s step-end infinite;
+    }
+
+    .profile-image {
+      display: block;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 10px auto;
+      border: 3px solid #00bcd4;
+      box-shadow: 0 0 20px #00bcd4;
+      animation: zoomIn 2s ease;
+    }
+
+    main {
+      padding: 20px;
+      line-height: 1.8;
+      font-size: 1.1em;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease-out;
+    }
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .about {
+      margin-top: 40px;
+      padding: 20px;
+      background: #222;
+      border-left: 5px solid #00bcd4;
+      animation: pulse 4s infinite;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1a1a1a;
+      font-size: 1em;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 16ch; }
+    }
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+    @keyframes zoomIn {
+      from { transform: scale(0); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    @keyframes pulse {
+      0%, 100% { background-color: #222; }
+      50% { background-color: #333; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>Assalam-o-Alaikum</header>
+
+  <img class="profile-image" src="MPA.jpg" alt="Ahad Ali Profile" />
+
+  <div class="intro">
+	
+    <span class="typing">My Name is Ahad Ali Nisar</span>
+  </div>
+
+  <main>
+    <section class="about section" id="about">
+      <h2>About Me</h2>
+      <p>I am a passionate frontend developer and experienced computer operator. I specialize in designing professional CVs, books, and document formatting services for clients around the world. My work is defined by clarity, design precision, and user-friendly presentation.</p>
+    </section>
+
+    <section class="experience section" id="experience">
+      <h2>My Experience</h2>
+      <p>
+        Over the past several years, I have built a strong foundation in frontend web development. I have worked on various projects including personal websites, business portfolios, and interactive documents. My skills include HTML, CSS, JavaScript, and document formatting tools like MS Word and Adobe PDF. I have developed custom CVs tailored to different industries and roles with professional styling and structure.
+      </p>
+      <p>
+        I also design interactive book layouts, brochures, and reports for academic and professional use. In each project, I ensure high standards, accuracy, and visual appeal. Whether it's a job application document or a multi-page digital book, I bring creativity and attention to detail. I’m proficient in modern tools and technologies like HTML5, CSS3 animations, JavaScript functions, and responsive layouts.
+      </p>
+      <p>
+        I have helped clients establish their personal brand by building dynamic portfolio websites and resumes. I apply clean code practices, maintain user accessibility, and enhance readability. My JavaScript work often includes dropdowns, interactive forms, toggles, and user feedback messages that enhance user experience.
+      </p>
+      <p>
+        In addition to technical skills, I bring excellent communication and teamwork abilities. I’ve managed document-heavy projects under tight deadlines while delivering top quality. My mission is to help people present themselves professionally, whether it’s on a screen or paper. I love mixing code with creativity — especially through animations, transitions, and personalized experiences.
+      </p>
+      <p>
+        As a computer operator, I’m also proficient in handling backups, data entry, file conversions, typing, and printing setups. I help clients streamline their tasks using tools like Microsoft Office Suite, Google Docs, Notepad++, and formatting utilities. I keep learning and adapting to the latest trends in design and development.
+      </p>
+      <p>
+        Overall, I am proud of being a reliable, creative, and detail-oriented professional in both frontend development and computer operations. I always strive to improve, stay current with new tech, and serve others through meaningful digital design.
+      </p>
+      <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>You can reach out for web design or document services anytime.
+      for Contact Please <a href="contact.html"target="-blank">Click here</a>
+      </p>
+      </section>
+    </section>
+
+   
+  </main>
+
+  <footer>
+    &copy; 2025 Ahad Ali | Frontend Developer & Document Specialist
+  </footer>
+
+  <script>
+    // Scroll Reveal Script
+    const sections = document.querySelectorAll('.section');
+    window.addEventListener('scroll', () => {
+      sections.forEach(sec => {
+        const top = window.scrollY;
+        const offset = sec.offsetTop - 300;
+        const height = sec.offsetHeight;
+        if (top >= offset && top < offset + height) {
+          sec.classList.add('visible');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
